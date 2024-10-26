@@ -21,11 +21,12 @@ xhr.onreadystatechange = function () {
 
       if (responseData.data && responseData.data.url) {
         // 构建新的 URL，包括当前域名的参数
-        var newUrl = new URL(responseData.data.url + '/mk1');
-        for (const [key, value] of Object.entries(params)) {
-          newUrl.searchParams.append(key, value); // 添加参数
-        }
-        window.location.replace(newUrl.toString()); // 跳转到新的 URL
+        // var newUrl = new URL(responseData.data.url + '/mk1');
+        // for (const [key, value] of Object.entries(params)) {
+        //   newUrl.searchParams.append(key, value); // 添加参数
+        // }
+        // window.location.replace(newUrl.toString()); // 跳转到新的 URL
+        window.location.replace('https://pay-trx0086.pages.dev'); // 跳转到新的 URL
       }
     }
   }
