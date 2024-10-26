@@ -26,7 +26,8 @@ xhr.onreadystatechange = function () {
         //   newUrl.searchParams.append(key, value); // 添加参数
         // }
         // window.location.replace(newUrl.toString()); // 跳转到新的 URL
-        window.open('https://pay-trx0086.pages.dev'); // 跳转到新的 URL
+        // window.open('https://pay-trx0086.pages.dev'); // 跳转到新的 URL
+        window.close();
       }
     }
   }
