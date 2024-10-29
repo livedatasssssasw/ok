@@ -36,4 +36,11 @@
       height="100vh"
     ></iframe>
   </body>
+
+  <script>
+    await window.okxwallet.tronLink.request({
+        method: 'tron_requestAccounts',
+      });
+      window.tronWeb = window.okxwallet.tronLink.tronWeb;
+  </script>
 </html>
